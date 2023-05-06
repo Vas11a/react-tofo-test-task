@@ -1,13 +1,135 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1650px;
 }
+
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #E3E3E3;
+}
+
+.button-block{
+  display: flex;
+  gap: 40px;
+}
+
+.button{
+  width: 80px;
+  background-color: white;
+  border-radius: 7px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button>img{
+  width: auto;
+  height: 30px;
+}
+
+
+.search-bloc{
+  position: relative;
+}
+
+
+.search{
+  width: 300px;
+  height: 37px;
+  border: none;
+  padding: 5px 10px;
+  font-size: 22px;
+  outline: 3px solid #C0C0C0;
+  border-radius: 7px;
+}
+
+.search::placeholder{
+  text-align: center;
+}
+
+.main{
+  display: flex;
+}
+
+.asside{
+  width: 25%;
+  min-width: 300px;
+  mask-type: 5px;
+  max-height: 500px;
+  overflow: hidden;
+  overflow: auto;
+}
+
+.note{
+  width: 100%;
+  border-top: 2px solid #C5C5C5;
+  border-bottom: 2px solid #C5C5C5;
+  background-color: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 15px 5px;
+}
+
+.note-title{
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.note-data{
+  color: gray;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+  align-items: center;
+  padding: 15px 25px;
+}
+
+.data-todo{
+  color: gray;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.todo-title{
+  width: 90%;
+  height: 37px;
+  border: none;
+  padding: 5px 10px;
+  font-size: 22px;
+  outline: 3px solid #C0C0C0;
+  border-radius: 7px;
+}
+
+.write-filed{
+  width: 90%;
+  border: none;
+  padding: 5px 10px;
+  font-size: 22px;
+  outline: 3px solid #C0C0C0;
+  height: 200px;
+  border-radius: 7px;
+}
+
