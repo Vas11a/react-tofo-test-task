@@ -63,6 +63,10 @@
 
 .main{
   display: flex;
+  min-height: 300px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #C0C0C0;
+  border-radius: 0 0 10px 10px;
 }
 
 .asside{
@@ -70,8 +74,8 @@
   min-width: 300px;
   mask-type: 5px;
   max-height: 500px;
-  overflow: hidden;
   overflow: auto;
+  border-right: 3px solid #C0C0C0;
 }
 
 .note{
@@ -129,7 +133,58 @@
   padding: 5px 10px;
   font-size: 22px;
   outline: 3px solid #C0C0C0;
-  height: 200px;
+  height: 100%;
+  min-height: 200px;
   border-radius: 7px;
+  resize: none;
 }
 
+
+.scrollbar::-webkit-scrollbar{
+  width: 12px;
+  background-color: #E3E3E3;
+}
+
+.scrollbar::-webkit-scrollbar-track{
+  border-color: #94A3B8;
+}
+
+.scrollbar::-webkit-scrollbar-thumb{
+  border: 2px solid rgb(148 163 184);
+  background-color: grey;
+  border-radius: 10px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .main{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .asside{
+    width: 90%;
+    border-top: 3px solid #94A3B8;
+    border-radius: 7px;
+  }
+  .section{
+    width: 90%;
+    padding: 15px 0;
+  }
+  .todo-title, .write-filed{
+    width: 100%;
+  }
+  .header{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .search-bloc{
+    width: 100%;
+  }
+  .search{
+    width: 100%;
+  }
+  .button-block{
+    width: 100%;
+    justify-content: space-between;
+  }
+}
